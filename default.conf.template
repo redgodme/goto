@@ -1,0 +1,9 @@
+server {
+    listen       80;
+    server_name  localhost;
+
+    location / {
+        # 301 代表永久重定向，对速度和 SEO 最好
+        return 301 ${TARGET_URL};
+    }
+}
